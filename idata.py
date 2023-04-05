@@ -9,7 +9,7 @@ def hunt():
         # browser = p.chromium.launch_persistent_context(
         #     USER_BROWSER_SESSION_PATH, headless=HEADLESS, color_scheme='dark', locale='en-GB', viewport={'width': 1024, 'height': 720}, device_scale_factor=2)
 
-        browser = p.chromium.launch_persistent_context(USER_BROWSER_SESSION_PATH, headless=HEADLESS, is_mobile=True, color_scheme='dark', locale='en-GB',
+        browser = p.chromium.launch_persistent_context(USER_BROWSER_SESSION_PATH, headless=True, is_mobile=True, color_scheme='dark', locale='en-GB',
                                                        user_agent='Mozilla/5.0 (iPhone; CPU iPhone OS 14_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1', viewport={'width': 390, 'height': 844}, device_scale_factor=2)
 
         page = browser.new_page()

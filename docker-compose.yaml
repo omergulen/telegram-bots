@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    platform: linux/amd64
+    command: python idata.py
+    restart: always
+    environment:
+      - USER_BROWSER_SESSION_PATH=/app/browser_session
+      - HEADLESS=1
+      - TELEGRAM_TOKEN=TOKEN
+      - TELEGRAM_CHAT_ID=CHAT_ID
